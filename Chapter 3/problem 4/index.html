@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chapter 3| problem 3</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      body {
+        background: #7b3f97;
+      }
+      .image {
+        /* display: block; we use this when any element is self closing tag like here img tag */
+        width: 300px;
+        height: 403.922px;
+      }
+      .image_container {
+        background-color: white;
+        border-radius: 10px;
+        width: 300px;
+        margin: auto;
+      }
+      .image_container h1 {
+        color: #000;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      .image_container p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      .text {
+        padding: 10px;
+      }
+      .text button {
+        display: flex;
+        padding: 6px 12px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 10px;
+        background: #e0f70d;
+        color: #000;
+        font-size: 16px;
+        font-family: Inter;
+        font-weight: 500;
+        border: none;
+        border: 1px solid transparent;
+      }
+      .text button:hover {
+        background: #c9d089;
+        cursor: pointer;
+        border: 1px solid transparent;
+      }
+      .text button:active {
+        border: 1px solid #3a3852;
+        background: #fff;
+      }
+      .container {
+        padding-top: 108px;
+        background-image: url(./sun.png), url("./star.png");
+        background-repeat: no-repeat;
+        background-position: right top, bottom left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image_container">
+        <img
+          class="image"
+          src="./clique-images-hSB2HmJYaTo-unsplash 1.png"
+          alt=""
+        />
+
+        <div class="text">
+          <h1>Tension Mat Lo Sab Hoga</h1>
+          <p>
+            Bus Practice Karo kam hojayega. sure me hard hoga but bad me asan ho
+            jayega
+          </p>
+          <button>Earn Reward</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS | chapter 6 | problem 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+
+      .dots-wrapper {
+        display: flex;
+        gap: 10px;
+      }
+
+      /* her we used nth-child() and selected for even elements to change their color and here we can also use 2n for even and 2n + 1 for odd */
+      .dot:nth-child(even) {
+        background: #05ff00;
+        animation: evenLoading ease-in 1s infinite;
+      }
+      .dot:nth-child(odd) {
+        background-color: red;
+        animation: oddLoading ease-in 1s infinite;
+      }
+      @keyframes oddLoading {
+        0%,
+        100% {
+          translate: 0 50%;
+        }
+
+        25%,
+        75% {
+          translate: 0 0%;
+        }
+
+        50% {
+          translate: 0 -50%;
+        }
+      }
+
+      @keyframes evenLoading {
+        0%,
+        100% {
+          translate: 0 -50%;
+        }
+
+        25%,
+        75% {
+          translate: 0 0%;
+        }
+
+        50% {
+          translate: 0 50%;
+        }
+      }
+
+      .dot {
+        background-color: red;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dots-wrapper">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+  </body>
+</html>

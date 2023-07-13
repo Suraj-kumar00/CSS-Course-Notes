@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS | chapter 5</title>
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        background-color: red;
+      }
+      /* #box1 {
+        position: relative;
+        left: 50px;
+        top: 100px;
+        background-color: green;
+      } */
+      #box1 {
+        background-color: green;
+        position: sticky;
+        top: 0;
+      }
+      #box2 {
+        border: 1px solid black;
+      }
+      .container {
+        position: relative;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="box1" class="box"></div>
+      <div id="box2" class="box">1</div>
+      <div id="box2" class="box">1</div>
+      <div id="box2" class="box">2</div>
+      <div id="box2" class="box">3</div>
+    </div>
+  </body>
+</html>

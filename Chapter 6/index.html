@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS | chapter 6</title>
+    <style>
+      @keyframes SlideFromRight {
+        /* now below is for if we have same translate value her 0 0px is same for 0% ,20%,80% and 100% */
+        0%,
+        20%,
+        80%,
+        100% {
+          translate: 0 0px;
+        }
+
+        60% {
+          translate: 0 40px;
+        }
+
+        /* from {
+          translate: 100px;
+        }
+
+        to {
+          translate: 0;
+        } */
+      }
+      .container {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+      .box {
+        display: grid;
+
+        place-items: center;
+        font-size: 50px;
+        height: 200px;
+        width: 200px;
+        background-color: rgb(158, 214, 158);
+        /* transition-property: height, width, background;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in; */
+        /* transition: height 0.3s ease-in, width 0.3s ease-in,
+          background 1.5s ease-in; */
+        /* transition: all 1s ease-in-out; */
+        cursor: pointer;
+        /* animation-name: SlideFromRight;
+        animation-duration: 0.4s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-direction: reverse; */
+        /* so below is the shorthand for animation property */
+        animation: SlideFromRight 0.4s ease-in infinite;
+      }
+
+      .box:hover {
+        /* transform: translateX(50px) translateY(50px); */
+        /* the shorthand of above transform property is  */
+        /* transform: translate(50px, 50px);
+        transform: rotate(
+          50deg */
+        /* this is rotate property with X,Yand Z axis */
+        /* transform-origin: left top; */
+        font-size: 50px;
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        /* transition-property: height, width, background;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in; */
+        /* this is the shorthand for above large code of transition */
+        /* transition: height 0.3s ease-in, width 0.3s ease-in,
+          background 1.5s ease-in; */
+        /* if here all the timing is same say all have 0.3s so we cal use this  */
+
+        /* transition: all 1s ease-in-out; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">BOX</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS chapter 4 | problem 1</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
+      nav {
+        height: 80px;
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        background: #069cbd;
+        align-items: center;
+        padding: 20px;
+      }
+      nav ul {
+        display: flex;
+
+        gap: 24px;
+      }
+      li {
+        list-style-type: none;
+        color: #fff;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: 500;
+        border-bottom: 2px solid transparent;
+      }
+      nav h1 {
+        color: #fff;
+        font-size: 32px;
+        font-family: Inter;
+        font-weight: 700;
+      }
+      li:hover {
+        border-bottom: 2px solid white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>Logo</h1>
+      <ul class="link_container">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>

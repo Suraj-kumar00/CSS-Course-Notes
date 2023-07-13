@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS | chapter 1</title>
+    <style>
+      /*Universal Selector*/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /*this is id selector*/
+      /* #title{
+        color: red;
+      } */
+
+      /* to select a class use '.' and give a name like 'blue-color', this is a class selector*/
+      /* .blue-color{ 
+        color: blue;
+      }
+
+      .fontbold{
+        font-weight: bold;
+      } */
+
+      /* h1 {
+        color: blue;
+        background: yello;
+      } */
+      /*we can group classes and elements */
+      .container {
+        background-color: yellow;
+      }
+      h1,
+      p,
+      q {
+        color: navy;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <div class="container">
+        <h1 class="blue-color fontbold">this is my first html page</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, porro,
+          officia sed, accusamus repudiandae quisquam quaerat praesentium
+          corporis aspernatur quam repellendus itaque incidunt voluptatem iste
+          reprehenderit possimus suscipit autem non dicta quia maiores cumque
+          blanditiis. Omnis explicabo laudantium accusantium, architecto
+          quisquam voluptatem minima illo harum, vitae enim quo quibusdam iste.
+
+          <q
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            eos recusandae aperiam saepe ratione magni soluta aut dolorem vel,
+            velit nulla assumenda temporibus, labore praesentium aspernatur
+            doloremque error. Quas enim soluta, cum quam consequatur sapiente ut
+            doloribus, voluptatibus culpa porro sed molestiae dicta recusandae
+            qui quae suscipit necessitatibus mollitia fugit.</q
+          >
+        </p>
+      </div>
+    </h1>
+  </body>
+</html>
